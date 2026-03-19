@@ -1,0 +1,264 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benson Muchina | Electrical Engineer | Automation & Embedded Systems</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .grid-bg {
+            background-image: radial-gradient(#334155 0.5px, transparent 0.5px);
+            background-size: 30px 30px;
+        }
+        .dark .grid-bg {
+            background-image: radial-gradient(#1e293b 0.5px, transparent 0.5px);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-300 transition-colors duration-300"
+      x-data="{ darkMode: true }"
+      :class="{ 'dark': darkMode }">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="cpu" class="text-cyan-500"></i>
+                <span class="font-bold tracking-tighter uppercase text-sm dark:text-white">Benson_Engineering</span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-widest">
+                <a href="#about" class="hover:text-cyan-500 transition-colors">About</a>
+                <a href="#skills" class="hover:text-cyan-500 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-cyan-500 transition-colors">Projects</a>
+                <a href="#services" class="hover:text-cyan-500 transition-colors">What I Solve</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="relative pt-32 pb-20 grid-bg">
+        <div class="max-w-7xl mx-auto px-6 relative">
+            <div class="max-w-3xl">
+
+                <div class="inline-block px-3 py-1 mb-6 text-[10px] font-bold tracking-[0.2em] uppercase border border-cyan-500/30 text-cyan-600 dark:text-cyan-400 bg-cyan-500/5 rounded">
+                    Practical Engineering • Control Thinking • Systems Reliability
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight">
+                    Benson Muchina
+                </h1>
+
+                <p class="text-xl md:text-2xl font-semibold text-slate-600 dark:text-slate-400 mb-4">
+                    Electrical Engineer | <span class="text-cyan-600 dark:text-cyan-400">Automation & Embedded Systems</span>
+                </p>
+
+                <p class="text-lg text-slate-500 max-w-xl leading-relaxed mb-10">
+                    I build and troubleshoot practical engineering systems — from PLC logic and control panels to embedded controllers, instrumentation, and power electronics.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-slate-900 dark:bg-white text-white dark:text-black font-bold rounded hover:bg-cyan-600 dark:hover:bg-cyan-500 transition-all">
+                        View Projects
+                    </a>
+                    <button class="px-8 py-3 border border-slate-300 dark:border-slate-800 font-bold rounded hover:bg-slate-100 dark:hover:bg-slate-900">
+                        Download CV
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAL -->
+            <div class="hidden lg:block absolute right-6 top-0 w-80">
+                <div class="bg-slate-900 rounded-lg p-5 mono text-[11px] text-cyan-400 border border-slate-800 shadow-2xl">
+                    <div class="flex gap-1.5 mb-4">
+                        <div class="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
+                    </div>
+
+                    <p class="text-slate-500 mb-2">// SYSTEM_STATUS</p>
+                    <p class="mb-1 text-white">> STATUS: ACTIVE_BUILD_MODE</p>
+                    <p class="mb-1">> CURRENT_FOCUS: AUTOMATION + EMBEDDED</p>
+                    <p class="mb-1">> SYSTEMS: PLC, SENSORS, POWER, CONTROL</p>
+                    <p class="mb-1">> APPROACH: LOW_COST_HIGH_RELIABILITY</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 dark:text-white uppercase tracking-tighter">About</h2>
+
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                I am especially interested in the intersection between industrial automation, embedded systems, and practical field engineering.
+                I enjoy understanding how machines behave, why failures happen, and how controls can be improved without unnecessary cost.
+            </p>
+
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mt-6">
+                My strongest engineering instinct is troubleshooting: tracing faults logically, understanding signal behavior, and designing solutions that are practical, maintainable, and reliable.
+            </p>
+        </div>
+    </section>
+
+    <!-- ENGINEERING PHILOSOPHY -->
+    <section class="py-20 bg-slate-900 text-white border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-12 italic">How I Think as an Engineer</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="p-8 border border-slate-800">
+                    <i data-lucide="search" class="text-cyan-500 mb-6"></i>
+                    <h3 class="font-bold text-lg mb-3">Root Cause Troubleshooting</h3>
+                    <p class="text-slate-400 text-sm">
+                        I like tracing faults to the actual source — whether electrical noise, bad logic, poor wiring practice, or hidden process behavior.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-slate-800">
+                    <i data-lucide="wrench" class="text-cyan-500 mb-6"></i>
+                    <h3 class="font-bold text-lg mb-3">Build for Maintainability</h3>
+                    <p class="text-slate-400 text-sm">
+                        I prefer systems that another technician can understand, repair, and improve without unnecessary complexity.
+                    </p>
+                </div>
+
+                <div class="p-8 border border-slate-800">
+                    <i data-lucide="shield" class="text-cyan-500 mb-6"></i>
+                    <h3 class="font-bold text-lg mb-3">Practical Engineering</h3>
+                    <p class="text-slate-400 text-sm">
+                        I value solutions that work in real environments — affordable, reliable, and technically sound.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 dark:text-white uppercase tracking-tighter">Technical Matrix</h2>
+
+            <div class="grid md:grid-cols-4 gap-6">
+
+                <div class="p-6 bg-white dark:bg-slate-900 rounded border">
+                    <h3 class="font-bold text-cyan-600 mb-4">Automation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>PLC Logic Development</li>
+                        <li>Sensor Integration</li>
+                        <li>Industrial Troubleshooting</li>
+                        <li>Control Sequence Design</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-white dark:bg-slate-900 rounded border">
+                    <h3 class="font-bold text-cyan-600 mb-4">Electrical</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>Panel Wiring</li>
+                        <li>Motor Control</li>
+                        <li>Protection Circuits</li>
+                        <li>Fault Diagnosis</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-white dark:bg-slate-900 rounded border">
+                    <h3 class="font-bold text-cyan-600 mb-4">Embedded</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>ESP32 / Microcontrollers</li>
+                        <li>PWM Logic</li>
+                        <li>Sensor Interfacing</li>
+                        <li>Serial Communication</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-white dark:bg-slate-900 rounded border">
+                    <h3 class="font-bold text-cyan-600 mb-4">Power Electronics</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>SSR / Relay Control</li>
+                        <li>MOSFET Switching</li>
+                        <li>Amplifier Systems</li>
+                        <li>Power Supply Analysis</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-24 bg-slate-100 dark:bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 dark:text-white uppercase tracking-tighter">Selected Projects</h2>
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <div>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">ESP32 Hot Air Rework Station Controller</h3>
+                    <p class="text-sm text-slate-500">
+                        Temperature control logic using thermocouple feedback, SSR heater control, blower logic, LCD interface, and embedded safety behavior.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">Audio Amplifier Power Analysis</h3>
+                    <p class="text-sm text-slate-500">
+                        Output stage analysis using 2SA1943 / 2SC5200 transistor pairs, dual rail supply behavior, and subwoofer matching considerations.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">Industrial Troubleshooting Logic</h3>
+                    <p class="text-sm text-slate-500">
+                        Practical diagnosis of PLC-linked faults involving sensors, actuators, relay logic, and maintenance interpretation.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 dark:text-white uppercase tracking-tighter">What I Can Build or Solve</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="p-6 border rounded">Panel Wiring Support</div>
+                <div class="p-6 border rounded">PLC Troubleshooting</div>
+                <div class="p-6 border rounded">Calibration Assistance</div>
+                <div class="p-6 border rounded">Automation Upgrades</div>
+                <div class="p-6 border rounded">Embedded Prototypes</div>
+                <div class="p-6 border rounded">Technical Problem Solving</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-slate-200 dark:border-slate-800 text-center">
+        <p class="text-xs mono text-slate-500 uppercase tracking-[0.3em]">
+            Built with Engineering Precision
+        </p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
+```
